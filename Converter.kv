@@ -1,0 +1,100 @@
+<FloatLayout>:
+
+
+    first_digit: first_digit
+    second_digit: second_digit
+    result: result
+    third_digit: third_digit
+    fourth_digit: fourth_digit
+
+
+    BoxLayout:
+        orientation: 'vertical'
+
+
+        MDToolbar:
+            title: "Complex Converter"
+            elevation: 20
+            md_bg_color: 32/255,49/255,61/255,1
+
+        GridLayout:
+            cols: 4
+            rows: 4
+            spacing: 15
+            padding: 25
+
+            MDTextFieldRect:
+                size_hint: (.8, None)
+                height: "40dp"
+                id: first_digit
+                multiline: False
+
+
+
+            MDLabel:
+
+                text: '+ j'
+                size_hint: (.8, None)
+                height: "40dp"
+                font_style: 'H6'
+                halign: "center"
+                font_size: 30
+
+
+
+            MDTextFieldRect:
+
+                size_hint: 1, None
+                height: "40dp"
+                id: second_digit
+                multiline: False
+
+
+            MDFlatButton:
+
+                orientation: 'vertical'
+                text: '='
+                on_press: root.alg_exp()
+                height: '40dp'
+                font_size: 35
+
+
+
+            MDTextFieldRect:
+                size_hint: 1, None
+                height: "40dp"
+                id: third_digit
+                multiline: False
+
+            MDLabel:
+                size_hint: (.8, None)
+                height: "40dp"
+                font_style: 'H6'
+                text: 'e'
+                font_size: 40
+                height: '40dp'
+                halign: 'center'
+
+            MDTextFieldRect:
+                size_hint: 1, None
+                height: "40dp"
+                id: fourth_digit
+                multiline: False
+
+
+            MDFlatButton:
+
+                text: '='
+                on_press: root.exp_alg()
+                height: '40dp'
+                font_size: 35
+
+
+
+        MDLabel:
+            font_style: 'H6'
+            id: result
+            text: '0'
+            font_size: 30
+            height: '40dp'
+            halign: 'center'
