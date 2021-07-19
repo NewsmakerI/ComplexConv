@@ -1,0 +1,1 @@
+This application can help to convert complex numbers from algebraic form to exponential form and back. That can be helpful for students from power enginnering faculty to make countings easier and faster. The calculator of complex number will be added soon.
